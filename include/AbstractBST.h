@@ -1,39 +1,13 @@
 #ifndef AbstractBST_h
 #define AbstractBST_h
 
-
-
-
-class AbstractBST{
+class AbstractBST
+{
 public:
-virtual bool isEmpty() = 0;
-virtual void addBST(int key, int value) = 0;
-virtual void removeBST(int value) = 0;
-virtual void searchBST(int targetkey) = 0;
-
-
+    virtual void addBST(int value, int target) = 0;
+    virtual bool isEmpty() = 0;
+    virtual void deleteBST(int value, int target) = 0;
+    virtual bool searchBST(int target) = 0;
+    virtual void traverse() = 0;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #endif
